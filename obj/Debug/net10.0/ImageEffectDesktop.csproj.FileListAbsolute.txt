@@ -1,0 +1,7 @@
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/ImageEffectDesktop.csproj.AssemblyReference.cache
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/Avalonia/Resources.Inputs.cache
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/Avalonia/resources
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/ImageEffectDesktop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/ImageEffectDesktop.AssemblyInfoInputs.cache
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/ImageEffectDesktop.AssemblyInfo.cs
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net10.0/ImageEffectDesktop.csproj.CoreCompileInputs.cache
