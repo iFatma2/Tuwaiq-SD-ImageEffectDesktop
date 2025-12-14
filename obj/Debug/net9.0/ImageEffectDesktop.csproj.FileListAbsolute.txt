@@ -74,3 +74,4 @@
 /Users/fatimahalqarni/Desktop/ImageEffectDesktop/bin/Debug/net9.0/SixLabors.Fonts.dll
 /Users/fatimahalqarni/Desktop/ImageEffectDesktop/bin/Debug/net9.0/SixLabors.ImageSharp.dll
 /Users/fatimahalqarni/Desktop/ImageEffectDesktop/bin/Debug/net9.0/SixLabors.ImageSharp.Drawing.dll
+/Users/fatimahalqarni/Desktop/ImageEffectDesktop/obj/Debug/net9.0/ImageEffectDesktop.sourcelink.json

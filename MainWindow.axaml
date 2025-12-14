@@ -4,37 +4,115 @@
         Width="900" Height="600"
         Title="Image Effects Desktop">
 
-    <DockPanel LastChildFill="True" Margin="10">
+    <!-- ===== Background ===== -->
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FF2B2E34" Offset="0"/>
+            <GradientStop Color="#FF1C1F24" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
 
-        <!-- Toolbar -->
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,0,0,10">
-            <Button x:Name="UploadButton" Content="Upload Image" Click="OnUploadButtonClick"/>
-        </StackPanel>
+    <!-- ===== Global Styles ===== -->
+    <Window.Styles>
+        <Style Selector="Button.accent">
+            <Setter Property="Background" Value="#FF4FC3F7"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="14,8"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
 
-        <!-- Main Section -->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <Style Selector="TextBlock.section-title">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#FFECECEC"/>
+        </Style>
+    </Window.Styles>
 
-            <!-- Manual Effects -->
-            <StackPanel Grid.Column="0" HorizontalAlignment="Center">
-                <TextBlock Text="Manual Effects" FontWeight="Bold" FontSize="16" Margin="0,0,0,5"/>
-                <Border BorderBrush="Gray" BorderThickness="1" Width="400" Height="400">
-                    <Image x:Name="ManualImage" Stretch="Uniform"/>
-                </Border>
-                <Button x:Name="ManualButton" Content="Apply Grayscale" Click="OnManualButtonClick" Margin="0,10,0,0"/>
+    <Border Padding="16,80,16,16">
+
+        <DockPanel LastChildFill="True">
+
+            <!-- ===== Top Toolbar ===== -->
+            <StackPanel DockPanel.Dock="Top"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,30">
+
+                <Button x:Name="UploadButton"
+                        Classes="accent"
+                        Content="Upload Image 📤"
+                        Click="OnUploadButtonClick"/>
             </StackPanel>
 
-            <!-- Auto Effects -->
-            <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                <TextBlock Text="Auto Effects" FontWeight="Bold" FontSize="16" Margin="0,0,0,5"/>
-                <Border BorderBrush="Gray" BorderThickness="1" Width="400" Height="400">
-                    <Image x:Name="AutoImage" Stretch="Uniform"/>
-                </Border>
-                <Button x:Name="AutoButton" Content="Start Auto Effects" Click="OnAutoButtonClick" Margin="0,10,0,0"/>
-            </StackPanel>
-        </Grid>
-    </DockPanel>
+            <!-- ===== Main Content ===== -->
+            <Grid ColumnSpacing="24">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- ===== Manual Effects ===== -->
+                <StackPanel Grid.Column="0"
+                            HorizontalAlignment="Center"
+                            Spacing="12">
+
+                    <TextBlock Text="Manual Effects"
+                               Classes="section-title"
+                               HorizontalAlignment="Center"/>
+
+                    <Border Width="400"
+                            Height="400"
+                            CornerRadius="12"
+                            Background="#FF2A2E35"
+                            BorderBrush="#FF3C4048"
+                            BorderThickness="1"
+                            Padding="8">
+
+                        <Image x:Name="ManualImage"
+                               Stretch="Uniform"/>
+                    </Border>
+
+                    <Button x:Name="ManualButton"
+                            Classes="accent"
+                            Content="Step Manual Effects"
+                            Click="OnManualButtonClick"
+                            HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- ===== Auto Effects ===== -->
+                <StackPanel Grid.Column="1"
+                            HorizontalAlignment="Center"
+                            Spacing="12">
+
+                    <TextBlock Text="Auto Effects"
+                               Classes="section-title"
+                               HorizontalAlignment="Center"/>
+
+                    <Border Width="400"
+                            Height="400"
+                            CornerRadius="12"
+                            Background="#FF2A2E35"
+                            BorderBrush="#FF3C4048"
+                            BorderThickness="1"
+                            Padding="8">
+
+                        <Image x:Name="AutoImage"
+                               Stretch="Uniform"/>
+                    </Border>
+
+                    <Button x:Name="AutoButton"
+                            Classes="accent"
+                            Content="Start Auto Effects"
+                            Click="OnAutoButtonClick"
+                            HorizontalAlignment="Center"/>
+                </StackPanel>
+
+            </Grid>
+
+        </DockPanel>
+    </Border>
+
 </Window>

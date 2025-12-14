@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageEffectDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7fbd228b9401a7112d814ea4fb456e1153f63e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageEffectDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageEffectDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
