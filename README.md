@@ -1,3 +1,5 @@
+<img width="1475" height="982" alt="Screenshot 2025-12-15 at 5 30 23 PM" src="https://github.com/user-attachments/assets/9d5063f6-4214-4316-99b9-071991a026e4" />
+
 # Image Effects Desktop
 
 A cross‑platform desktop app built with **Avalonia UI** and **ImageSharp**.  
